@@ -1,19 +1,24 @@
 import os
+import streamlit as st
 from groq import Groq
 from dotenv import load_dotenv
 
-# Loads API credentials securely from environment file
-# force load latest .env file
-load_dotenv(dotenv_path=".env", override=True)
+# Load local environment variables
+load_dotenv()
 
-api_key = os.getenv("GROQ_API_KEY")
+# Works both locally (.env) and on Streamlit Cloud (secrets)
+api_key = st.secrets.get("GROQ_API_KEY") or os.getenv("GROQ_API_KEY")
 
-print("Current API key being used:", api_key[:10])   # only prints first few chars
-# Initializes Groq LLM client
+# Initialize Groq client
 client = Groq(api_key=api_key)
 
-# Sends prompt to LLM and returns generated response
+
 def get_llm_response(prompt):
+    """
+    Sends prompt to Groq LLM
+    and returns generated response
+    """
+    
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
@@ -23,4 +28,5 @@ def get_llm_response(prompt):
             }
         ]
     )
+
     return response.choices[0].message.content
