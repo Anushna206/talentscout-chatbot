@@ -426,12 +426,7 @@ Added styling, progress bars, metrics, and FAQ sections.
 
 ---
 
-# Demo
-
-Add your :contentReference[oaicite:4]{index=4} video link here.
-
----
 
 # GitHub Repository
 
-Add your :contentReference[oaicite:5]{index=5} repository link here.
+https://github.com/Anushna206/talentscout-chatbot
