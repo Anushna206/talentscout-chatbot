@@ -232,22 +232,19 @@ to end the interview.
 # Technical Details
 
 ## Frontend
-:contentReference[oaicite:0]{index=0}
+
 
 Used to build the chatbot user interface.
 
 ---
 
 ## Programming Language
-:contentReference[oaicite:1]{index=1}
 
 Used for backend logic and application development.
 
 ---
 
 ## LLM Provider
-:contentReference[oaicite:2]{index=2}
-
 Used for generating technical interview questions and follow-up responses.
 
 ---
@@ -261,7 +258,6 @@ llama-3.3-70b-versatile
 ---
 
 ## Environment Management
-:contentReference[oaicite:3]{index=3}
 
 Used to securely load API keys.
 
