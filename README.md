@@ -16,7 +16,7 @@ The chatbot helps recruiters by:
 - Providing multilingual support
 - Ensuring privacy awareness during data collection
 
-
+Live Application: https://talentscout-chatbot-rkq9ksxfdcymnjrfn9tu7a.streamlit.app/
 ---
 
 # Capabilities
